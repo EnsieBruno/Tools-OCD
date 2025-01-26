@@ -1,0 +1,107 @@
+/* Fonte Poppins para todo o site */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa; 
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+/* Container principal */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px; 
+    text-align: center;
+}
+
+/* Título principal */
+.title {
+    font-size: 2.2em;
+    color: rgb(10, 45, 221);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+/* Estilo do label */
+.text-label {
+    display: block;
+    font-size: 1.1em;
+    color: #201f1f;
+    margin-bottom: 8px;
+}
+
+/* Campo de entrada de texto */
+.campos {
+    width: 95%;
+    background: rgba(232, 234, 242, 0.9);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    color: #333;
+    padding: 12px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.campos:focus {
+    outline: none;
+    border-color: rgb(10, 10, 183); 
+    background: rgba(232, 234, 242, 1);
+}
+
+/* Estilo do botão */
+.botoes-site {
+    background: rgb(10, 45, 221);
+    color: white;
+    font-size: 1em;
+    padding: 12px 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 500px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botoes-site:hover {
+    color: rgb(10, 45, 221);
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-2px); /* Efeito de elevação suave */
+}
+
+.botoes-site:active {
+    border-color: rgb(10, 10, 183);
+    transform: translateY(1px); /* Efeito ao clicar, faz o botão descer levemente */
+}
+
+/* Estilo do alerta */
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background-color: #d4edda; /* Verde pastel */
+    color: #155724; /* Verde escuro para o texto */
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(-20px);
+    z-index: 1000;
+}
+
+/* Alerta visível */
+.alert.show {
+    opacity: 1;
+    transform: translateY(0);
+}
