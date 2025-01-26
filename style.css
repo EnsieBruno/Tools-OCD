@@ -17,14 +17,14 @@ body {
     padding: 30px;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 100%;
+    width: 90%; /* Ajusta a largura para ocupar quase toda a tela em dispositivos móveis */
     max-width: 500px; 
     text-align: center;
 }
 
 /* Título principal */
 .title {
-    font-size: 2.2em;
+    font-size: 1.8em; /* Reduzido para melhor exibição em telas pequenas */
     color: rgb(10, 45, 221);
     margin-bottom: 20px;
     font-weight: 800;
@@ -33,14 +33,14 @@ body {
 /* Estilo do label */
 .text-label {
     display: block;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #201f1f;
     margin-bottom: 8px;
 }
 
 /* Campo de entrada de texto */
 .campos {
-    width: 95%;
+    width: 93%; 
     background: rgba(232, 234, 242, 0.9);
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -66,7 +66,7 @@ body {
     border: 1px solid;
     border-radius: 8px;
     cursor: pointer;
-    width: 500px;
+    width: 100%; /* Ajusta para a largura do container em dispositivos móveis */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -104,4 +104,38 @@ body {
 .alert.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Media query para telas menores */
+@media screen and (max-width: 768px) {
+    body {
+        height: auto; 
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 20px; /* Reduz o raio em telas menores */
+    }
+
+    .title {
+        font-size: 1.6em; /* Tamanho menor para títulos */
+    }
+
+    .botoes-site {
+        font-size: 0.9em; /* Ajuste do tamanho da fonte no botão */
+        padding: 10px 15px; /* Ajuste de espaçamento */
+    }
+
+    .campos {
+        padding: 10px; 
+        font-size: 0.9em;
+    }
+
+    .alert {
+        top: 10px;
+        right: 10px;
+        font-size: 12px; /* Tamanho da fonte menor */
+        padding: 10px; /* Ajuste no espaçamento do alerta */
+    }
 }
